@@ -1,0 +1,27 @@
+
+.simpsonFamily {
+    background-color: #5a8eea;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.simpsonsCard {
+    margin: 30px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    border: 1px black solid;
+    background-color: #7486a9;
+
+}
+.simpsInfo {
+    height: 100%;
+    margin: 0 10px;
+    text-align: center;
+}
+.simpsImg {
+    width: 100px;
+    height: 150px;
+}
