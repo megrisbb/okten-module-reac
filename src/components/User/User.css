@@ -1,7 +1,14 @@
 .user{
+    font-size: 9px;
     border: 1px solid black;
     text-align: center;
-    width: 700px;
+    width: 300px;
     margin-top: 20px;
     background-color: #f5b56e;
+}
+.user-button {
+    font-size: 14px;
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
