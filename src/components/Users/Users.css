@@ -1,3 +1,11 @@
+.user-details {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.user-details__body {
+    text-align: center;
+}
 .user-body {
     display: flex;
     flex-wrap: wrap;
