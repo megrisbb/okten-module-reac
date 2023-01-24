@@ -1,4 +1,5 @@
 import './UserDetails.css'
+
 const UserDetails = ({userDetails}) => {
     const {id, email, website, phone} = userDetails;
     return (

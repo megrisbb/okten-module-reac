@@ -1,0 +1,9 @@
+.ships-body {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.ships-title {
+    text-align: center;
+}

@@ -1,4 +1,5 @@
 import './User.css'
+
 const User = ({user, setUserDetails}) => {
     const {id, name, surname} = user;
     return (

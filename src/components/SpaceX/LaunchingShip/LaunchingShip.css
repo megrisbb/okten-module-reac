@@ -1,0 +1,11 @@
+.ships-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 40px;
+    border: 1px black solid;
+    background-color: #947d53;
+    height: 370px;
+}
