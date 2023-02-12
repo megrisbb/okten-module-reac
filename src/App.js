@@ -7,6 +7,7 @@ const App = () => {
 
     const [updateCar, setUpdateCar] = useState(null);
 
+
     useEffect(() => {
         carService.getAll().then(({data}) => setCars([...data]))
     }, [])
@@ -15,7 +16,7 @@ const App = () => {
         <div>
             <CarForm setCars={setCars} updateCar={updateCar}/>
             <hr/>
-            <Cars cars={cars} setUpdateCar={setUpdateCar}/>
+            <Cars cars={cars} setUpdateCar={setUpdateCar} setCars={setCars}/>
         </div>
     );
 };
