@@ -1,11 +1,9 @@
-import {UserForm, Users} from "./components";
+import {CreateUser} from "./components/CreateUser/CreateUser";
 
 const App = () => {
     return (
         <div>
-            <UserForm/>
-            <hr/>
-            <Users/>
+            <CreateUser/>
         </div>
     );
 };
