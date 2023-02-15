@@ -1,6 +1,8 @@
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 const Comment = ({comment}) => {
+
+    const navigate = useNavigate();
 
     const {postId, id, name, email, body} = comment;
 
@@ -11,7 +13,7 @@ const Comment = ({comment}) => {
             <div>Name: {name}</div>
             <div>Email: {email}</div>
             <div>Body: {body}</div>
-            <Link to={postId.toString()}>Current Post</Link>
+            <button onClick={()=>navigate(postId.toString())}>Current Post</button>
         </div>
     );
 };
