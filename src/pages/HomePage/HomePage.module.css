@@ -1,0 +1,9 @@
+.helloOktenTitle {
+    text-align: center;
+    font-size: 70px;
+}
+
+.oktenLogo {
+    display: flex;
+    justify-content: center;
+}
