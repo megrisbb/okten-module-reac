@@ -1,15 +1,11 @@
-import {useAppReducer} from "../../../hooks/useAppReducer";
 
-import {dogsActions} from "../../../reducers";
-
-const Dog = ({dog}) => {
-    const [, dispatch] = useAppReducer(value => value.dogReducer);
+const Dog = ({dog, dispatch}) => {
     const {id, name} = dog;
     return (
         <div>
             <div>Id: {id}</div>
             <div>Name: {name}</div>
-            <button onClick={()=>dispatch(dogsActions.DELETE_BY_ID(id))}>Delete</button>
+            <button onClick={()=>dispatch({type:'DELETE_DOG', payload: id})}>DELETE</button>
         </div>
     );
 };

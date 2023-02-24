@@ -1,14 +1,9 @@
-import {useAppReducer} from "../../../hooks/useAppReducer";
-
 import {Cat} from "../Cat/Cat";
 
-const Cats = () => {
-
-    const [cats] = useAppReducer((reducers) => reducers.catsReducer);
-
+const Cats = ({cats, dispatch}) => {
     return (
         <div>
-            {cats.map(cat => <Cat key={cat.id} cat={cat}/>)}
+            {cats.map(cat=><Cat key={cat.id} cat={cat} dispatch={dispatch}/>)}
         </div>
     );
 };

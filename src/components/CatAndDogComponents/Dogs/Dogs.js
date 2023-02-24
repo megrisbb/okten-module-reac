@@ -1,14 +1,11 @@
-import {useAppReducer} from "../../../hooks/useAppReducer";
-
 import {Dog} from "../Dog/Dog";
 
-const Dogs = () => {
-        const [dogs] = useAppReducer((reducers) => reducers.dogReducer);
+const Dogs = ({dogs, dispatch}) => {
+    return (
+        <div>
+            {dogs.map(dog => <Dog key={dog.id} dog={dog} dispatch={dispatch}/>)}
+        </div>
+    );
+};
 
-        return (
-            <div>
-                {dogs.map(dog => <Dog key={dog.id} dog={dog}/>)}
-            </div>
-        );
-    };
 export {Dogs};
